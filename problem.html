@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>OJ-Cli</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script defer src="js/katex.min.js"></script>
+    <script defer src="js/auto-render.js" onload="renderMathInElement(document.body);"></script>
+    <script>function search(url){
+        var httpRequest = new XMLHttpRequest();
+        httpRequest.open('GET', url, true);
+        httpRequest.send();
+        httpRequest.onreadystatechange = function () {
+            if (httpRequest.readyState == 4 && httpRequest.status == 200) {
+                var json = httpRequest.responseText;
+                alert(json);
+            }
+        };
+    }</script>
+</head>
+
+<body>
+    <div class="input-group mb-3">
+        <input type="text" id="keyword" class="form-control" placeholder="Enter keyword" aria-label="keyword"
+            aria-describedby="button-addon2">
+        <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="search('https://www.luogu.com.cn/problem/list?keyword='+$('#keyword').value+'&page=1&_contentOnly=1')">Button</button>
+    </div>
+</body>
+
+</html>

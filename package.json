@@ -1,0 +1,23 @@
+{
+  "name": "OJ-Cli",
+  "version": "1.0.0",
+  "description": "A OJ Client",
+  "main": "main.js",
+  "dependencies": {
+    "ajv": "^6.9.1",
+    "electron-store": "^8.0.0"
+  },
+  "devDependencies": {
+    "electron": "^14.0.0",
+    "electron-builder": "^22.11.7"
+  },
+  "build": {
+    "appId": "com.cli.oj",
+    "productName": "OJ-Cli",
+    "asar": true
+  },
+  "scripts": {
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  }
+}

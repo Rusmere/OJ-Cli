@@ -1,0 +1,9 @@
+{
+  "name": "OJ-Cli",
+  "version": "1.0.0",
+  "description": "A OJ Client",
+  "main": "main.js",
+  "dependencies": {
+    "electron-store": "^8.0.0"
+  }
+}

@@ -1,0 +1,16 @@
+		@font-face {
+            font-family: "Jetbrains Mono";
+            src: url("../fonts/JetBrainsMono-Regular.woff2") format('woff2');
+        }
+
+        @font-face {
+            font-family: "XHei Intel";
+            src: url("../fonts/XHei_Intel.woff2") format('woff2');
+        }
+
+        body,
+        td,
+        th {
+            font-family: "Jetbrains Mono","XHei Intel";
+            overflow: hidden;
+        }
