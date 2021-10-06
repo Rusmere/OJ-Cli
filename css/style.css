@@ -14,3 +14,19 @@
             font-family: "Jetbrains Mono","XHei Intel";
             overflow: hidden;
         }
+        .nav-link{
+            font-size:25px;
+            transition:200ms;
+            border-style:solid;
+            border-width:1px;
+            border-left:0;
+            border-right:0;
+            border-color:#c7bebd;
+        }
+        .nav-link:hover{
+            font-size:30px; 
+        }
+        .nav{
+            background-color:#564949;
+             
+        } 
